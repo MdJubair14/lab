@@ -77,13 +77,13 @@ public class List<T> {
 		return removedItem;
 	}
 	
-	private boolean isEmpty() {
+	public boolean isEmpty() {
 		return firstNode == null;
 	}
 	
 	public void print(){
 		if( isEmpty() ){
-			System.out.println(name + " is empty");
+			System.out.printf("Empty %s\n", name);
 			return;
 		}
 		
